@@ -1,0 +1,318 @@
+<html>
+
+<head>
+    <title>Team theory</title>
+    <link rel="stylesheet" href="css/matrixCalc.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="JQExamples.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="file:///C:/Users/yakov/Desktop/yakovProject/main.html" class="active">◀ Home</a>
+        <a href="file:///C:/Users/hgec2/OneDrive/Desktop/yakovProject/Calculator.html" class="active">Simpale
+            calc</a>
+
+    </div>
+    <table>
+        <br> <br>
+        <tr>
+            <arr0></arr0>
+        </tr>
+    </table>
+    <br> <br>
+    <table>
+        <arr1></arr1>
+    </table>
+    <br> <br>
+    <table>
+        <arr2></arr2>
+    </table>
+    <br> <br>
+    <table>
+        <arr3></arr3>
+    </table>
+    <br> <br>
+    <table>
+        <arr4></arr4>
+    </table>
+    <br> <br>
+    <table>
+        <arr5></arr5>
+    </table>
+    <br> <br>
+    <table>
+        <arr6></arr6>
+    </table>
+    <br> <br>
+    <table>
+        <arr7></arr7>
+    </table>
+    <br> <br>
+    <table>
+        <arr8></arr8>
+    </table>
+    <br> <br>
+    <table>
+        <arr9></arr9>
+    </table>
+    <br> <br>
+    <table>
+        <arr10></arr10>
+    </table>
+    <br> <br>
+    <table>
+        <arr11></arr11>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr12></arr12>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr13></arr13>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr14></arr14>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr15></arr15>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr16></arr16>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr17></arr17>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr18></arr18>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr19>
+            </arr4>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr20></arr20>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr21></arr21>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr22></arr22>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr23></arr23>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr24></arr24>
+    </table>
+    <br> <br> <br>
+    <table>
+        <arr25></arr25>
+    </table>
+    <br> <br> <br>
+
+
+    <div class="main">
+        <div class="container">
+            <p>Team theory</p>
+            <form name="myForm">
+                <input type="text" name="textview" class="textview" disabled>
+            </form>
+        </div>
+        <table>
+            <tr>
+                <td> <input type="button" class="button start calcM " id="calc" value="calc" onclick="calc()"></td>
+                <td> <input type="button" class="button start initM " id="init" value=" init" onclick="init()"> </td>
+                <td><input type="button" class="button start ratioM" id="ratio" value=" ratio" onclick="relations()">
+                </td>
+                <td> <input type="button" class="button start statisticM" id="statistic" value=" statistic"
+                        onclick="statistic()"></td>
+                <td> <input type="button" class="button start statisticM" id="lang" value="עברית" onclick="language()">
+                </td>
+                <!-- <td>
+                    <p> &nbsp; &nbsp; Calculator </p>
+                </td> -->
+            </tr>
+            <table>
+                <tr>
+                    <td> <input type="button" class="button symbol symbolP " value="P(A)"
+                            onclick="statisticAction('P(A)')">
+                    </td>
+                    <td> <input type="button" class="button symbol symbolP " value="P(A|B)"
+                            onclick="statisticAction('P(A|B)')"> </td>
+                    </td>
+                    <td><input type="button" class="button groups omega " value="Ω" onclick="organ('Ω')"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td> <input type="button" class="button symbol " value="∪" onclick="action('∪')"> </td>
+                    <td> <input type="button" class="button symbol " value="∩" onclick="action('∩')"></td>
+                    <td> <input type="button" class="button symbol " value="\" onclick="action('-')"> </td>
+                    <td> <input type="button" class="button symbol " value="⨁" onclick="action('⨁')"> </td>
+                    <td> <input type="button" class="button symbol " value="×" onclick="action('×')"> </td>
+                    <td><input type="button" class="button groups empty " value="Ø" onclick="organ('Ø')"> </td>
+                </tr>
+            </table>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button groups " value="A" onclick="organ('A')"></td>
+                <td><input type="button" class="button groups " value="B" onclick="organ('B')"> </td>
+                <td><input type="button" class="button groups " value="C" onclick="organ('C')"></td>
+                <td><input type="button" class="button groups " value="D" onclick="organ('D')"> </td>
+                <td><input type="button" class="button groups " value="E" onclick="organ('E')"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button groups" value="F" onclick="organ('F')"> </td>
+                <td><input type="button" class="button groups" value="G" onclick="organ('G')"></td>
+                <td><input type="button" class="button groups" value="H" onclick="organ('H')"> </td>
+                <td><input type="button" class="button groups" value="I" onclick="organ('I')"> </td>
+                <td><input type="button" class="button groups" value="J" onclick="organ('J')"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button groups" value="K" onclick="organ('K')"> </td>
+                <td><input type="button" class="button groups" value="L" onclick="organ('L')"></td>
+                <td><input type="button" class="button groups" value="M" onclick="organ('M')"> </td>
+                <td><input type="button" class="button groups" value="N" onclick="organ('N')"> </td>
+                <td><input type="button" class="button groups" value="O" onclick="organ('O')"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button groups" value="p" onclick="organ('P')"> </td>
+                <td><input type="button" class="button groups" value="Q" onclick="organ('Q')"></td>
+                <td><input type="button" class="button groups" value="R" onclick="organ('R')"> </td>
+                <td><input type="button" class="button groups" value="S" onclick="organ('S')"> </td>
+                <td><input type="button" class="button groups" value="T" onclick="organ('T')"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button groups" value="U" onclick="organ('U')"> </td>
+                <td><input type="button" class="button groups" value="V" onclick="organ('V')"></td>
+                <td><input type="button" class="button groups" value="W" onclick="organ('W')"> </td>
+                <td><input type="button" class="button groups" value="X" onclick="organ('X')"> </td>
+                <td><input type="button" class="button groups" value="Y" onclick="organ('Y')"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button groups" value="Z" onclick="organ('Z')"></td>
+                <td><input type="button" class="button comma " value="," onclick="iSComma(',')"> </td>
+                <td> <input type="button" class="button ex " id="Exist" value="Exist" onclick="isExist()"> </td>
+                <td><input id="subArray" type="button" class="button orangeIn " value="IN" onclick="add()"> </td>
+                <td><input type="button" class="button orange" value="AC" onclick="c()"></td>
+
+
+
+
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button organs numbers" value="1" onclick="addingOrgan('1')"> </td>
+                <td><input type="button" class="button organs numbers" value="2" onclick="addingOrgan('2')"> </td>
+                <td><input type="button" class="button organs numbers" value="3" onclick="addingOrgan('3')"> </td>
+                <td><input type="button" class="button organs numbers" value="4" onclick="addingOrgan('4')"> </td>
+                <td><input type="button" class="button organs numbers" value="5" onclick="addingOrgan('5')"> </td>
+                <td><input type="button" class="button organs numbers" value="6" onclick="addingOrgan('6')"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button organs numbers " value="7" onclick="addingOrgan('7')"> </td>
+                <td><input type="button" class="button organs numbers " value="8" onclick="addingOrgan('8')"> </td>
+                <td><input type="button" class="button organs numbers " value="9" onclick="addingOrgan('9')"> </td>
+                <td><input type="button" class="button organs numbers " value="0" onclick="addingOrgan('0')"> </td>
+                <td><input type="button" class="button organs characters " id="A" value="a" onclick="addingOrgan('a')">
+                </td>
+                <td><input type="button" class="button organs characters " id="B" value="b" onclick="addingOrgan('b')">
+                </td>
+
+            </tr>
+            <tr></tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" class="button organs characters " id="C" value="c" onclick="addingOrgan('c')">
+                </td>
+                <td><input type="button" class="button organs characters " id="D" value="d" onclick="addingOrgan('d')">
+                </td>
+                <td><input type="button" class="button organs characters " id="E" value="e" onclick="addingOrgan('e')">
+                </td>
+                <td><input type="button" class="button organs characters " id="F" value="f" onclick="addingOrgan('f')">
+                </td>
+                <td><input type="button" class="button organs characters " id="G" value="g" onclick="addingOrgan('g')">
+                </td>
+                <td><input type="button" class="button organs characters " id="H" value="h" onclick="addingOrgan('h')">
+                </td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="button organs characters " id="I" value="i" onclick="addingOrgan('i')">
+                </td>
+                <td><input type="button" class="button organs characters " id="J" value="j" onclick="addingOrgan('j')">
+                </td>
+                <td><input type="button" class="button organs characters " id="K" value="k" onclick="addingOrgan('k')">
+                </td>
+                <td><input type="button" class="button organs characters " id="L" value="l" onclick="addingOrgan('l')">
+                </td>
+                <td><input type="button" class="button organs characters " id="M" value="m" onclick="addingOrgan('m')">
+                </td>
+                <td><input type="button" class="button organs characters " id="N" value="n" onclick="addingOrgan('n')">
+                </td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="button organs characters " id="O" value="o" onclick="addingOrgan('o')">
+                </td>
+                <td><input type="button" class="button organs characters " id="p" value="p" onclick="addingOrgan('p')">
+                </td>
+                <td><input type="button" class="button organs characters " id="Q" value="q" onclick="addingOrgan('q')">
+                </td>
+                <td><input type="button" class="button organs characters " id="R" value="r" onclick="addingOrgan('r')">
+                </td>
+                <td><input type="button" class="button organs characters " id="S" value="s" onclick="addingOrgan('s')">
+                </td>
+                <td><input type="button" class="button organs characters " id="T" value="t" onclick="addingOrgan('t')">
+                </td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="button organs characters " id="U" value="u" onclick="addingOrgan('u')">
+                </td>
+                <td><input type="button" class="button organs characters " id="V" value="v" onclick="addingOrgan('v')">
+                </td>
+                <td><input type="button" class="button organs characters " id="W" value="w" onclick="addingOrgan('w')">
+                </td>
+                <td><input type="button" class="button organs characters " id="X" value="x" onclick="addingOrgan('x')">
+                </td>
+                <td><input type="button" class="button organs characters " id="Y" value="y" onclick="addingOrgan('y')">
+                </td>
+                <td><input type="button" class="button organs characters " id="Z" value="z" onclick="addingOrgan('z')">
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <script src="js/matrixCalc.js"></script>
+    </script>
+
+</body>
+
+</html>
