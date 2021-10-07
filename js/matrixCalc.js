@@ -1,4 +1,4 @@
-//yakov finkelshtein project 032540957
+//yakov finkelshtein project
 let jq = 'init';
 let flagInit = false;
 jqry(jq);
